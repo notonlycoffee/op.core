@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databases>
+
+	<database>
+		<database-name type="structure">xxxxx</database-name><!-- strcture   all -->
+		<tables count="all"><!-- 可选值:all   part   只有设置为part才可以读取下面的表名字 -->
+			<table-name>xxxxx</table-name>
+			<table-name>xxxxx</table-name>
+		</tables>
+
+		<database-host><!-- 这里的host优先级高于全局host配置 -->
+			<user-name>xxxxx</user-name>
+			<password>xxxxx</password>
+			<host>xxxxx</host>
+			<port>xxxxx</port>
+		</database-host>
+		<database-encode>xxxxx</database-encode>
+		
+<!-- 		<data-out>D:\\esjr_member.sql</data-out> --><!-- 如果省略输出文件设置,则默认使用数据库名称作为输出文件名称,存放在D盘根目录下 -->
+	</database>
+
+	<database>
+		<database-name type="structure">xxxxx</database-name>
+		<tables count="part">
+			<table-name>xxxxx</table-name>
+			<table-name>xxxxx</table-name>
+		</tables>
+
+		<database-host>
+			<user-name>xxxxx</user-name>
+			<password>xxxxx</password>
+			<host>xxxxx</host>
+			<port>xxxxx</port>
+		</database-host>
+		<database-encode>xxxxx</database-encode>
+		
+		<data-out>xxxxx</data-out>
+	</database>
+	
+	<gloable-host>
+		<user-name>xxxxx</user-name>
+		<password>xxxxx</password>
+		<host>xxxxx</host>
+		<port>xxxxx</port>
+	</gloable-host>
+
+</databases>
